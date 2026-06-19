@@ -1,0 +1,83 @@
+:root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-blue: #38bdf8;
+    --accent-green: #4ade80;
+    --border-color: #334155;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.dashboard-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.table { color: var(--text-main) !important; margin-bottom: 0; }
+.table thead { background-color: #111827; }
+.table th {
+    color: var(--text-muted) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: transparent !important;
+}
+
+.skill-badge {
+    background-color: #334155;
+    color: #e2e8f0;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.status-pill {
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-shortlisted { background-color: rgba(74, 222, 128, 0.15); color: var(--accent-green); }
+.status-review { background-color: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+
+.upload-box {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color) !important;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.upload-box:hover, .upload-box.dragover {
+    background-color: #334155;
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+}
+
+.border-dashed { border-style: dashed !important; }
